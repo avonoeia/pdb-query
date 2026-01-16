@@ -13,7 +13,7 @@ ToDo: Add installation instructions
 ## Usage
 We provide a simple, clean interface for querying the PDB database. This involves creating a separate file for your queries which should end with .pdbq extension. It is also possible to include custom Python code for handling outputs ensuring that your main Python scripts stays nice and clean. Every project should include only one .pdbq file, however, it is possible to include multiple queries into a single file. The .pdbq file can broken up into three sections which should appear in order: 
 - the configurations section - makes it possible to specify configurations for the query like the return type, sorting format, etc.
-- the query section - this is where the actual queries are defined. It is possible to include multiple queries in one file. Read the [query strings](##query-strings) section below for more information on how to construct query strings.
+- the query section - this is where the actual queries are defined. It is possible to include multiple queries in one file. Read the [query strings](#query-strings) section below for more information on how to construct query strings.
 - user code - you can customize the way the results are handled by providing your own user code. This is optional. Any valid Python code can be included here.
 
 Single line comments should start with a # character and can be included anywhere in the file.
@@ -35,6 +35,8 @@ def handle_results(results):
         print(f"Entry ID: {entry['entry_id']}, Title: {entry['title']}")
     return None
 ```
+
+If no handle_results function is provided, the default behavior will be to return the results as returned by the PDB API without any additional processing. 
 
 ## Query Strings
 Query strings are used to define the actual queries that will be sent to the PDB database. I have tried to put simplicity and intuitiveness at the heart of the design of query strings. The query strings are designed to be easy to read and write, even for users who are not familiar with the underlying PDB schema or API. 
