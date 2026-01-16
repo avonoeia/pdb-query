@@ -1,0 +1,6 @@
+CONFIG return_type = entry
+CONFIG request_options.paginate = 25
+CONFIG request_options.results_content_type = "experimental"
+CONFIG request_options.sort.sort_by = "score"
+CONFIG request_options.sort.direction = "desc"
+CONFIG request_options.scoring_strategy = "combined" 

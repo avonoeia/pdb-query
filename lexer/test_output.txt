@@ -1,0 +1,66 @@
+Found Token: 1000 | Text: 'CONFIG'
+	-> Type: Keyword (CONFIG)
+
+Found Token: 1013 | Text: 'return_type'
+	-> Type: Identifier
+
+Found Token: 1006 | Text: '='
+
+Found Token: 1013 | Text: 'entry'
+	-> Type: Identifier
+
+Found Token: 1000 | Text: 'CONFIG'
+	-> Type: Keyword (CONFIG)
+
+Found Token: 1013 | Text: 'request_options.paginate'
+	-> Type: Identifier
+
+Found Token: 1006 | Text: '='
+
+Found Token: 1011 | Text: '25'
+	-> Type: Value (Number)
+
+Found Token: 1000 | Text: 'CONFIG'
+	-> Type: Keyword (CONFIG)
+
+Found Token: 1013 | Text: 'request_options.results_content_type'
+	-> Type: Identifier
+
+Found Token: 1006 | Text: '='
+
+Found Token: 1012 | Text: '"experimental"'
+	-> Type: String Literal
+
+Found Token: 1000 | Text: 'CONFIG'
+	-> Type: Keyword (CONFIG)
+
+Found Token: 1013 | Text: 'request_options.sort.sort_by'
+	-> Type: Identifier
+
+Found Token: 1006 | Text: '='
+
+Found Token: 1012 | Text: '"score"'
+	-> Type: String Literal
+
+Found Token: 1000 | Text: 'CONFIG'
+	-> Type: Keyword (CONFIG)
+
+Found Token: 1013 | Text: 'request_options.sort.direction'
+	-> Type: Identifier
+
+Found Token: 1006 | Text: '='
+
+Found Token: 1012 | Text: '"desc"'
+	-> Type: String Literal
+
+Found Token: 1000 | Text: 'CONFIG'
+	-> Type: Keyword (CONFIG)
+
+Found Token: 1013 | Text: 'request_options.scoring_strategy'
+	-> Type: Identifier
+
+Found Token: 1006 | Text: '='
+
+Found Token: 1012 | Text: '"combined"'
+	-> Type: String Literal
+
